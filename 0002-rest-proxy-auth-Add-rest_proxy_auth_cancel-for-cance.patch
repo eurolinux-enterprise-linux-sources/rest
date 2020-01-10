@@ -1,0 +1,56 @@
+From 18cf9a2090bb846c92d19d416cd56080eb20f7bd Mon Sep 17 00:00:00 2001
+From: Pavel Grunt <pgrunt@redhat.com>
+Date: Fri, 20 Mar 2015 16:22:11 +0100
+Subject: [PATCH] rest-proxy-auth: Add rest_proxy_auth_cancel for cancelling
+ authentication
+
+It can be helpful when handling the "authenticate" signal to allow
+to cancel the authentication instead of failing with an error.
+---
+ rest/rest-proxy-auth.c | 17 +++++++++++++++++
+ rest/rest-proxy-auth.h |  1 +
+ 2 files changed, 18 insertions(+)
+
+diff --git a/rest/rest-proxy-auth.c b/rest/rest-proxy-auth.c
+index 0cb6d7c..79f21e0 100644
+--- a/rest/rest-proxy-auth.c
++++ b/rest/rest-proxy-auth.c
+@@ -135,6 +135,23 @@ rest_proxy_auth_unpause (RestProxyAuth *auth)
+   auth->priv->paused = FALSE;
+ }
+ 
++/**
++ * rest_proxy_auth_cancel:
++ * @auth: a #RestProxyAuth
++ *
++ * Cancel the authentication process
++ * by cancelling the associated #SoupMessage.
++ * It results in returning #GError REST_PROXY_ERROR_CANCELLED
++ * to the function that requested the authentication.
++ */
++void
++rest_proxy_auth_cancel (RestProxyAuth *auth)
++{
++  g_return_if_fail (REST_IS_PROXY_AUTH (auth));
++
++  soup_session_cancel_message (auth->priv->session, auth->priv->message, SOUP_STATUS_CANCELLED);
++}
++
+ G_GNUC_INTERNAL gboolean rest_proxy_auth_is_paused (RestProxyAuth *auth)
+ {
+   g_return_val_if_fail (REST_IS_PROXY_AUTH (auth), FALSE);
+diff --git a/rest/rest-proxy-auth.h b/rest/rest-proxy-auth.h
+index 6358e1a..816aaa9 100644
+--- a/rest/rest-proxy-auth.h
++++ b/rest/rest-proxy-auth.h
+@@ -66,6 +66,7 @@ GType rest_proxy_auth_get_type (void);
+ 
+ void rest_proxy_auth_pause (RestProxyAuth *auth);
+ void rest_proxy_auth_unpause (RestProxyAuth *auth);
++void rest_proxy_auth_cancel (RestProxyAuth *auth);
+ 
+ G_END_DECLS
+ 
+-- 
+2.7.4
+

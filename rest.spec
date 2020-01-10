@@ -10,7 +10,7 @@
 
 Name:          rest
 Version:       0.7.92
-Release:       2%{?dist}
+Release:       3%{?dist}
 Summary:       A library for access to RESTful web services
 
 Group:         System Environment/Libraries
@@ -19,6 +19,7 @@ URL:           http://www.gnome.org
 Source0:       http://download.gnome.org/sources/%{name}/0.7/%{name}-%{version}.tar.xz
 Patch0:        rest-fixdso.patch
 Patch1:        0001-oauth-Add-missing-include.patch
+Patch2:        0002-rest-proxy-auth-Add-rest_proxy_auth_cancel-for-cance.patch
 
 BuildRequires: glib2-devel
 %if %{?enable_gir}
@@ -55,6 +56,7 @@ Files for development with %{name}.
 %setup -q
 %patch0 -p1 -b .fixdso
 %patch1 -p1 -b .missinginclude
+%patch2 -p1
 
 %build
 autoreconf -vif
@@ -112,6 +114,10 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %endif
 
 %changelog
+* Fri Sep 02 2016 Eduardo Lima (Etrunko) <etrunko@redhat.com> 0.7.92-3
+- Add rest_proxy_auth_cancel for cancelling authentication
+  Related: rhbz#1289497
+
 * Tue Jan 20 2015 Christophe Fergeau <cfergeau@redhat.com> 0.7.92-2
 - Add patch fixing memory corruption with oauth
 - Fix build on RHEL6
