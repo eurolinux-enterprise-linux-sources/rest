@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>librest Reference Manual: LastfmProxy</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="librest Reference Manual">
+<link rel="up" href="ch03.html" title="Service-specific Proxies">
+<link rel="prev" href="FlickrProxyCall.html" title="FlickrProxyCall">
+<link rel="next" href="LastfmProxyCall.html" title="LastfmProxyCall">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#LastfmProxy.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#LastfmProxy.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#LastfmProxy.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="FlickrProxyCall.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="LastfmProxyCall.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="LastfmProxy"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="LastfmProxy.top_of_page"></a>LastfmProxy</span></h2>
+<p>LastfmProxy</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="LastfmProxy.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-new" title="lastfm_proxy_new ()">lastfm_proxy_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-new-with-session" title="lastfm_proxy_new_with_session ()">lastfm_proxy_new_with_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-get-api-key" title="lastfm_proxy_get_api_key ()">lastfm_proxy_get_api_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-get-secret" title="lastfm_proxy_get_secret ()">lastfm_proxy_get_secret</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-get-session-key" title="lastfm_proxy_get_session_key ()">lastfm_proxy_get_session_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-set-session-key" title="lastfm_proxy_set_session_key ()">lastfm_proxy_set_session_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-sign" title="lastfm_proxy_sign ()">lastfm_proxy_sign</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-build-login-url" title="lastfm_proxy_build_login_url ()">lastfm_proxy_build_login_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="LastfmProxy.html#lastfm-proxy-is-successful" title="lastfm_proxy_is_successful ()">lastfm_proxy_is_successful</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="LastfmProxy.html#LastfmProxy--api-key" title="The “api-key” property">api-key</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="LastfmProxy.html#LastfmProxy--secret" title="The “secret” property">secret</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="LastfmProxy.html#LastfmProxy--session-key" title="The “session-key” property">session-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="LastfmProxy.html#LastfmProxy-struct" title="LastfmProxy">LastfmProxy</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="LastfmProxy.html#LASTFM-PROXY-ERROR:CAPS" title="LASTFM_PROXY_ERROR">LASTFM_PROXY_ERROR</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="RestProxy.html" title="RestProxy">RestProxy</a>
+        <span class="lineart">╰──</span> LastfmProxy
+</pre>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="lastfm-proxy-new"></a><h3>lastfm_proxy_new ()</h3>
+<pre class="programlisting"><a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+lastfm_proxy_new (<em class="parameter"><code>const <span class="type">char</span> *api_key</code></em>,
+                  <em class="parameter"><code>const <span class="type">char</span> *secret</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-new-with-session"></a><h3>lastfm_proxy_new_with_session ()</h3>
+<pre class="programlisting"><a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+lastfm_proxy_new_with_session (<em class="parameter"><code>const <span class="type">char</span> *api_key</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *secret</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *session_key</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-get-api-key"></a><h3>lastfm_proxy_get_api_key ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+lastfm_proxy_get_api_key (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>);</pre>
+<p>Get the API key.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.8.4.6"></a><h4>Returns</h4>
+<p> the API key. This string is owned by <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> and should not be
+freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-get-secret"></a><h3>lastfm_proxy_get_secret ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+lastfm_proxy_get_secret (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>);</pre>
+<p>Get the secret for authentication.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.8.5.6"></a><h4>Returns</h4>
+<p> the secret. This string is owned by <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> and should not be
+freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-get-session-key"></a><h3>lastfm_proxy_get_session_key ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+lastfm_proxy_get_session_key (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>);</pre>
+<p>Get the current session key.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.8.6.6"></a><h4>Returns</h4>
+<p> the session key, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no session key yet.  This string is owned
+by <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> and should not be freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-set-session-key"></a><h3>lastfm_proxy_set_session_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lastfm_proxy_set_session_key (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *session_key</code></em>);</pre>
+<p>Set the session key.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>session_key</p></td>
+<td class="parameter_description"><p>the access session_key</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-sign"></a><h3>lastfm_proxy_sign ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+lastfm_proxy_sign (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>,
+                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *params</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-build-login-url"></a><h3>lastfm_proxy_build_login_url ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+lastfm_proxy_build_login_url (<em class="parameter"><code><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> *proxy</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *token</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lastfm-proxy-is-successful"></a><h3>lastfm_proxy_is_successful ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+lastfm_proxy_is_successful (<em class="parameter"><code><a class="link" href="RestXmlParser.html#RestXmlNode"><span class="type">RestXmlNode</span></a> *root</code></em>,
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Examines the Lastfm response and if it not a successful reply, set <em class="parameter"><code>error</code></em>
+ and
+return FALSE.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>root</p></td>
+<td class="parameter_description"><p>The root node of a parsed Lastfm response</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> to set if the response was an error</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.8.10.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if this response is successful, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LastfmProxy-struct"></a><h3>LastfmProxy</h3>
+<pre class="programlisting">typedef struct _LastfmProxy LastfmProxy;</pre>
+<p><a class="link" href="LastfmProxy.html" title="LastfmProxy"><span class="type">LastfmProxy</span></a> has no publicly available members.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LASTFM-PROXY-ERROR:CAPS"></a><h3>LASTFM_PROXY_ERROR</h3>
+<pre class="programlisting">#define LASTFM_PROXY_ERROR lastfm_proxy_error_quark()
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="LastfmProxy.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="LastfmProxy--api-key"></a><h3>The <code class="literal">“api-key”</code> property</h3>
+<pre class="programlisting">  “api-key”                  <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The API key.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LastfmProxy--secret"></a><h3>The <code class="literal">“secret”</code> property</h3>
+<pre class="programlisting">  “secret”                   <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The API key secret.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LastfmProxy--session-key"></a><h3>The <code class="literal">“session-key”</code> property</h3>
+<pre class="programlisting">  “session-key”              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The session key.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>
