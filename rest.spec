@@ -1,6 +1,6 @@
 Name:          rest
 Version:       0.7.92
-Release:       3%{?dist}
+Release:       5%{?dist}
 Summary:       A library for access to RESTful web services
 
 Group:         System Environment/Libraries
@@ -10,6 +10,10 @@ Source0:       http://download.gnome.org/sources/%{name}/0.7/%{name}-%{version}.
 Patch0:        rest-fixdso.patch
 Patch1:        0001-oauth-Add-missing-include.patch
 Patch2:        0001-tests-proxy-continuous-Server-chunks-can-be-differen.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1271197
+Patch3:        0001-tests-Avoid-race-condition-in-threaded-tests.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1331101
+Patch4:        0001-rest-proxy-auth-Add-rest_proxy_auth_cancel-for-cance.patch
 
 BuildRequires: glib2-devel
 BuildRequires: gobject-introspection-devel
@@ -43,6 +47,8 @@ Files for development with %{name}.
 %patch0 -p1 -b .fixdso
 %patch1 -p1 -b .missinginclude
 %patch2 -p1 -b .proxycontinuous
+%patch3 -p1 -b .threadedtests
+%patch4 -p1 -b .cancellingauth
 
 %build
 autoreconf -vif
@@ -81,6 +87,14 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_datadir}/gir-1.0/RestExtras-0.7.gir
 
 %changelog
+* Mon May 02 2016 Debarshi Ray <rishi@fedoraproject.org> - 0.7.92-5
+- Add rest_proxy_auth_cancel for cancelling authentication
+Resolves: #1331101
+
+* Mon May 02 2016 Debarshi Ray <rishi@fedoraproject.org> - 0.7.92-4
+- Fix tests/custom-serialize and tests/threaded
+Resolves: #1271197
+
 * Thu Sep 17 2015 Debarshi Ray <rishi@fedoraproject.org> - 0.7.92-3
 - Fix tests/proxy-continuous
 Resolves: #1250935
