@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 <book xmlns="http://www.devhelp.net/book" title="librest Reference Manual" link="index.html" author="" name="rest" version="2" language="c">
   <chapters>
     <sub name="Generic Proxies" link="ch01.html">
@@ -187,5 +186,49 @@
     <keyword type="function" name="rest_xml_node_find ()" link="RestXmlParser.html#rest-xml-node-find"/>
     <keyword type="struct" name="RestXmlParser" link="RestXmlParser.html#RestXmlParser-struct"/>
     <keyword type="struct" name="struct RestXmlNode" link="RestXmlParser.html#RestXmlNode-struct"/>
+    <keyword type="constant" name="REST_MEMORY_STATIC" link="rest-RestParam.html#REST-MEMORY-STATIC:CAPS"/>
+    <keyword type="constant" name="REST_MEMORY_TAKE" link="rest-RestParam.html#REST-MEMORY-TAKE:CAPS"/>
+    <keyword type="constant" name="REST_MEMORY_COPY" link="rest-RestParam.html#REST-MEMORY-COPY:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_CANCELLED" link="RestProxy.html#REST-PROXY-ERROR-CANCELLED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_RESOLUTION" link="RestProxy.html#REST-PROXY-ERROR-RESOLUTION:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_CONNECTION" link="RestProxy.html#REST-PROXY-ERROR-CONNECTION:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_SSL" link="RestProxy.html#REST-PROXY-ERROR-SSL:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_IO" link="RestProxy.html#REST-PROXY-ERROR-IO:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_FAILED" link="RestProxy.html#REST-PROXY-ERROR-FAILED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_MULTIPLE_CHOICES" link="RestProxy.html#REST-PROXY-ERROR-HTTP-MULTIPLE-CHOICES:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_MOVED_PERMANENTLY" link="RestProxy.html#REST-PROXY-ERROR-HTTP-MOVED-PERMANENTLY:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_FOUND" link="RestProxy.html#REST-PROXY-ERROR-HTTP-FOUND:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_SEE_OTHER" link="RestProxy.html#REST-PROXY-ERROR-HTTP-SEE-OTHER:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_NOT_MODIFIED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-MODIFIED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_USE_PROXY" link="RestProxy.html#REST-PROXY-ERROR-HTTP-USE-PROXY:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_THREEOHSIX" link="RestProxy.html#REST-PROXY-ERROR-HTTP-THREEOHSIX:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_TEMPORARY_REDIRECT" link="RestProxy.html#REST-PROXY-ERROR-HTTP-TEMPORARY-REDIRECT:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_BAD_REQUEST" link="RestProxy.html#REST-PROXY-ERROR-HTTP-BAD-REQUEST:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_UNAUTHORIZED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-UNAUTHORIZED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_FOUROHTWO" link="RestProxy.html#REST-PROXY-ERROR-HTTP-FOUROHTWO:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_FORBIDDEN" link="RestProxy.html#REST-PROXY-ERROR-HTTP-FORBIDDEN:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_NOT_FOUND" link="RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-FOUND:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_METHOD_NOT_ALLOWED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-METHOD-NOT-ALLOWED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_NOT_ACCEPTABLE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-ACCEPTABLE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_PROXY_AUTHENTICATION_REQUIRED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-PROXY-AUTHENTICATION-REQUIRED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_REQUEST_TIMEOUT" link="RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-TIMEOUT:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_CONFLICT" link="RestProxy.html#REST-PROXY-ERROR-HTTP-CONFLICT:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_GONE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-GONE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_LENGTH_REQUIRED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-LENGTH-REQUIRED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_PRECONDITION_FAILED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-PRECONDITION-FAILED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_REQUEST_ENTITY_TOO_LARGE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-ENTITY-TOO-LARGE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_REQUEST_URI_TOO_LONG" link="RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-URI-TOO-LONG:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_UNSUPPORTED_MEDIA_TYPE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-UNSUPPORTED-MEDIA-TYPE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_REQUESTED_RANGE_NOT_SATISFIABLE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-REQUESTED-RANGE-NOT-SATISFIABLE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_EXPECTATION_FAILED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-EXPECTATION-FAILED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_INTERNAL_SERVER_ERROR" link="RestProxy.html#REST-PROXY-ERROR-HTTP-INTERNAL-SERVER-ERROR:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_NOT_IMPLEMENTED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_BAD_GATEWAY" link="RestProxy.html#REST-PROXY-ERROR-HTTP-BAD-GATEWAY:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_SERVICE_UNAVAILABLE" link="RestProxy.html#REST-PROXY-ERROR-HTTP-SERVICE-UNAVAILABLE:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_GATEWAY_TIMEOUT" link="RestProxy.html#REST-PROXY-ERROR-HTTP-GATEWAY-TIMEOUT:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_ERROR_HTTP_HTTP_VERSION_NOT_SUPPORTED" link="RestProxy.html#REST-PROXY-ERROR-HTTP-HTTP-VERSION-NOT-SUPPORTED:CAPS"/>
+    <keyword type="constant" name="REST_PROXY_CALL_FAILED" link="RestProxyCall.html#REST-PROXY-CALL-FAILED:CAPS"/>
+    <keyword type="constant" name="PLAINTEXT" link="OAuthProxy.html#PLAINTEXT:CAPS"/>
+    <keyword type="constant" name="HMAC_SHA1" link="OAuthProxy.html#HMAC-SHA1:CAPS"/>
   </functions>
 </book>

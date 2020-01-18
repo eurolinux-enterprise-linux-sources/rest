@@ -63,9 +63,9 @@ g_cclosure_user_marshal_BOOLEAN__OBJECT_BOOLEAN (GClosure     *closure,
                                                             gpointer     arg_1,
                                                             gboolean     arg_2,
                                                             gpointer     data2);
-  register GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);

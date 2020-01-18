@@ -40,6 +40,15 @@ rest_xml_parser_init (RestXmlParser *self)
 {
 }
 
+static void
+rest_xml_parser_xml_reader_error (void *arg,
+                                  const char *msg,
+                                  xmlParserSeverities severity,
+                                  xmlTextReaderLocatorPtr locator)
+{
+  REST_DEBUG(XML_PARSER, "%s", msg);
+}
+
 /**
  * rest_xml_parser_new:
  *
@@ -93,6 +102,7 @@ rest_xml_parser_parse_from_data (RestXmlParser *parser,
                                NULL, /* URL? */
                                NULL, /* encoding */
                                XML_PARSE_RECOVER | XML_PARSE_NOCDATA);
+  xmlTextReaderSetErrorHandler(reader, rest_xml_parser_xml_reader_error, NULL);
 
   while (xmlTextReaderRead (reader) == 1)
   {
@@ -194,9 +204,16 @@ rest_xml_parser_parse_from_data (RestXmlParser *parser,
         }
         break;
       case XML_READER_TYPE_TEXT:
-        cur_node->content = g_strdup (G(xmlTextReaderConstValue (reader)));
-        REST_DEBUG (XML_PARSER, "Text content found: %s",
-                 cur_node->content);
+        if (cur_node)
+        {
+          cur_node->content = g_strdup (G(xmlTextReaderConstValue (reader)));
+          REST_DEBUG (XML_PARSER, "Text content found: %s",
+                   cur_node->content);
+        } else {
+          g_warning ("[XML_PARSER] " G_STRLOC ": "
+                     "Text content ignored at top level.");
+        }
+        break;
       default:
         REST_DEBUG (XML_PARSER, "Found unknown content with type: 0x%x", 
                  xmlTextReaderNodeType (reader));

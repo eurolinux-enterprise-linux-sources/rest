@@ -16,6 +16,9 @@
 <ANCHOR id="rest-param-unref" href="rest/rest-RestParam.html#rest-param-unref">
 <ANCHOR id="rest-RestParam.other_details" href="rest/rest-RestParam.html#rest-RestParam.other_details">
 <ANCHOR id="RestMemoryUse" href="rest/rest-RestParam.html#RestMemoryUse">
+<ANCHOR id="REST-MEMORY-STATIC:CAPS" href="rest/rest-RestParam.html#REST-MEMORY-STATIC:CAPS">
+<ANCHOR id="REST-MEMORY-TAKE:CAPS" href="rest/rest-RestParam.html#REST-MEMORY-TAKE:CAPS">
+<ANCHOR id="REST-MEMORY-COPY:CAPS" href="rest/rest-RestParam.html#REST-MEMORY-COPY:CAPS">
 <ANCHOR id="RestParam" href="rest/rest-RestParam.html#RestParam">
 <ANCHOR id="rest-RestParam.see-also" href="rest/rest-RestParam.html#rest-RestParam.see-also">
 <ANCHOR id="rest-RestParams" href="rest/rest-RestParams.html">
@@ -58,6 +61,44 @@
 <ANCHOR id="RestProxyClass" href="rest/RestProxy.html#RestProxyClass">
 <ANCHOR id="REST-PROXY-ERROR:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR:CAPS">
 <ANCHOR id="RestProxyError" href="rest/RestProxy.html#RestProxyError">
+<ANCHOR id="REST-PROXY-ERROR-CANCELLED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-CANCELLED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-RESOLUTION:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-RESOLUTION:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-CONNECTION:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-CONNECTION:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-SSL:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-SSL:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-IO:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-IO:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-FAILED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-FAILED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-MULTIPLE-CHOICES:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-MULTIPLE-CHOICES:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-MOVED-PERMANENTLY:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-MOVED-PERMANENTLY:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-FOUND:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-FOUND:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-SEE-OTHER:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-SEE-OTHER:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-NOT-MODIFIED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-MODIFIED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-USE-PROXY:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-USE-PROXY:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-THREEOHSIX:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-THREEOHSIX:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-TEMPORARY-REDIRECT:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-TEMPORARY-REDIRECT:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-BAD-REQUEST:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-BAD-REQUEST:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-UNAUTHORIZED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-UNAUTHORIZED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-FOUROHTWO:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-FOUROHTWO:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-FORBIDDEN:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-FORBIDDEN:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-NOT-FOUND:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-FOUND:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-METHOD-NOT-ALLOWED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-METHOD-NOT-ALLOWED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-NOT-ACCEPTABLE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-ACCEPTABLE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-PROXY-AUTHENTICATION-REQUIRED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-PROXY-AUTHENTICATION-REQUIRED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-REQUEST-TIMEOUT:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-TIMEOUT:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-CONFLICT:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-CONFLICT:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-GONE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-GONE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-LENGTH-REQUIRED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-LENGTH-REQUIRED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-PRECONDITION-FAILED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-PRECONDITION-FAILED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-REQUEST-ENTITY-TOO-LARGE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-ENTITY-TOO-LARGE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-REQUEST-URI-TOO-LONG:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-REQUEST-URI-TOO-LONG:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-UNSUPPORTED-MEDIA-TYPE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-UNSUPPORTED-MEDIA-TYPE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-REQUESTED-RANGE-NOT-SATISFIABLE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-REQUESTED-RANGE-NOT-SATISFIABLE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-EXPECTATION-FAILED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-EXPECTATION-FAILED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-INTERNAL-SERVER-ERROR:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-INTERNAL-SERVER-ERROR:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-NOT-IMPLEMENTED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-NOT-IMPLEMENTED:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-BAD-GATEWAY:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-BAD-GATEWAY:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-SERVICE-UNAVAILABLE:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-SERVICE-UNAVAILABLE:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-GATEWAY-TIMEOUT:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-GATEWAY-TIMEOUT:CAPS">
+<ANCHOR id="REST-PROXY-ERROR-HTTP-HTTP-VERSION-NOT-SUPPORTED:CAPS" href="rest/RestProxy.html#REST-PROXY-ERROR-HTTP-HTTP-VERSION-NOT-SUPPORTED:CAPS">
 <ANCHOR id="RestProxy.property-details" href="rest/RestProxy.html#RestProxy.property-details">
 <ANCHOR id="RestProxy--binding-required" href="rest/RestProxy.html#RestProxy--binding-required">
 <ANCHOR id="RestProxy--disable-cookies" href="rest/RestProxy.html#RestProxy--disable-cookies">
@@ -107,6 +148,7 @@
 <ANCHOR id="RestProxyCall-struct" href="rest/RestProxyCall.html#RestProxyCall-struct">
 <ANCHOR id="REST-PROXY-CALL-ERROR:CAPS" href="rest/RestProxyCall.html#REST-PROXY-CALL-ERROR:CAPS">
 <ANCHOR id="RestProxyCallError" href="rest/RestProxyCall.html#RestProxyCallError">
+<ANCHOR id="REST-PROXY-CALL-FAILED:CAPS" href="rest/RestProxyCall.html#REST-PROXY-CALL-FAILED:CAPS">
 <ANCHOR id="RestProxyCall.property-details" href="rest/RestProxyCall.html#RestProxyCall.property-details">
 <ANCHOR id="RestProxyCall--proxy" href="rest/RestProxyCall.html#RestProxyCall--proxy">
 <ANCHOR id="OAuthProxy" href="rest/OAuthProxy.html">
@@ -136,6 +178,8 @@
 <ANCHOR id="OAuthProxy.other_details" href="rest/OAuthProxy.html#OAuthProxy.other_details">
 <ANCHOR id="OAuthProxy-struct" href="rest/OAuthProxy.html#OAuthProxy-struct">
 <ANCHOR id="OAuthSignatureMethod" href="rest/OAuthProxy.html#OAuthSignatureMethod">
+<ANCHOR id="PLAINTEXT:CAPS" href="rest/OAuthProxy.html#PLAINTEXT:CAPS">
+<ANCHOR id="HMAC-SHA1:CAPS" href="rest/OAuthProxy.html#HMAC-SHA1:CAPS">
 <ANCHOR id="OAuthProxy.property-details" href="rest/OAuthProxy.html#OAuthProxy.property-details">
 <ANCHOR id="OAuthProxy--consumer-key" href="rest/OAuthProxy.html#OAuthProxy--consumer-key">
 <ANCHOR id="OAuthProxy--consumer-secret" href="rest/OAuthProxy.html#OAuthProxy--consumer-secret">
@@ -264,6 +308,7 @@
 <ANCHOR id="annotation-glossterm-array" href="rest/ch05.html#annotation-glossterm-array">
 <ANCHOR id="annotation-glossterm-element-type" href="rest/ch05.html#annotation-glossterm-element-type">
 <ANCHOR id="annotation-glossterm-scope async" href="rest/ch05.html#annotation-glossterm-scope async">
+<ANCHOR id="annotation-glossterm-skip" href="rest/ch05.html#annotation-glossterm-skip">
 <ANCHOR id="annotation-glossterm-transfer container" href="rest/ch05.html#annotation-glossterm-transfer container">
 <ANCHOR id="annotation-glossterm-transfer full" href="rest/ch05.html#annotation-glossterm-transfer full">
 <ANCHOR id="annotation-glossterm-transfer none" href="rest/ch05.html#annotation-glossterm-transfer none">

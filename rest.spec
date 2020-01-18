@@ -1,28 +1,17 @@
 Name:          rest
-Version:       0.7.92
-Release:       5%{?dist}
+Version:       0.8.0
+Release:       1%{?dist}
 Summary:       A library for access to RESTful web services
 
-Group:         System Environment/Libraries
 License:       LGPLv2
 URL:           http://www.gnome.org
-Source0:       http://download.gnome.org/sources/%{name}/0.7/%{name}-%{version}.tar.xz
-Patch0:        rest-fixdso.patch
-Patch1:        0001-oauth-Add-missing-include.patch
-Patch2:        0001-tests-proxy-continuous-Server-chunks-can-be-differen.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1271197
-Patch3:        0001-tests-Avoid-race-condition-in-threaded-tests.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1331101
-Patch4:        0001-rest-proxy-auth-Add-rest_proxy_auth_cancel-for-cance.patch
+Source0:       http://download.gnome.org/sources/%{name}/0.8/%{name}-%{version}.tar.xz
 
 BuildRequires: glib2-devel
 BuildRequires: gobject-introspection-devel
 BuildRequires: libsoup-devel
 BuildRequires: libxml2-devel
 BuildRequires: gtk-doc
-BuildRequires: autoconf
-BuildRequires: automake
-BuildRequires: libtool
 
 %description
 This library was designed to make it easier to access web services that
@@ -35,23 +24,15 @@ this library is attempting to support.
 
 %package devel
 Summary: Development package for %{name}
-Group: Development/Libraries
-Requires: %{name} = %{version}-%{release}
-Requires: pkgconfig
+Requires: %{name}%{?_isa} = %{version}-%{release}
 
 %description devel
 Files for development with %{name}.
 
 %prep
 %setup -q
-%patch0 -p1 -b .fixdso
-%patch1 -p1 -b .missinginclude
-%patch2 -p1 -b .proxycontinuous
-%patch3 -p1 -b .threadedtests
-%patch4 -p1 -b .cancellingauth
 
 %build
-autoreconf -vif
 %configure --disable-static --enable-gtk-doc --enable-introspection=yes
 
 make %{?_smp_mflags} V=1
@@ -60,15 +41,15 @@ make %{?_smp_mflags} V=1
 make install DESTDIR=%{buildroot} INSTALL='install -p'
 
 #Remove libtool archives.
-find %{buildroot} -name '*.la' -exec rm -f {} ';'
+find %{buildroot} -type f -name "*.la" -delete
 
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
-%doc AUTHORS COPYING README
+%license COPYING
+%doc AUTHORS README
 %{_libdir}/librest-0.7.so.0
 %{_libdir}/librest-0.7.so.0.0.0
 %{_libdir}/librest-extras-0.7.so.0
@@ -77,7 +58,6 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/girepository-1.0/RestExtras-0.7.typelib
 
 %files devel
-%defattr(-,root,root,-)
 %{_includedir}/rest-0.7
 %{_libdir}/pkgconfig/rest*
 %{_libdir}/librest-0.7.so
@@ -87,6 +67,10 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_datadir}/gir-1.0/RestExtras-0.7.gir
 
 %changelog
+* Wed Sep 28 2016 Kalev Lember <klember@redhat.com> - 0.8.0-1
+- Update to 0.8.0
+- Resolves: #1387040
+
 * Mon May 02 2016 Debarshi Ray <rishi@fedoraproject.org> - 0.7.92-5
 - Add rest_proxy_auth_cancel for cancelling authentication
 Resolves: #1331101
