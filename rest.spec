@@ -1,17 +1,23 @@
 Name:          rest
 Version:       0.8.0
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       A library for access to RESTful web services
 
 License:       LGPLv2
 URL:           http://www.gnome.org
 Source0:       http://download.gnome.org/sources/%{name}/0.8/%{name}-%{version}.tar.xz
 
+# https://bugzilla.redhat.com/show_bug.cgi?id=1445700
+Patch0:        rest-0.8.0-fix-the-XML-test.patch
+
 BuildRequires: glib2-devel
 BuildRequires: gobject-introspection-devel
 BuildRequires: libsoup-devel
 BuildRequires: libxml2-devel
 BuildRequires: gtk-doc
+BuildRequires: autoconf
+BuildRequires: automake
+BuildRequires: libtool
 
 %description
 This library was designed to make it easier to access web services that
@@ -31,8 +37,10 @@ Files for development with %{name}.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+autoreconf -vif
 %configure --disable-static --enable-gtk-doc --enable-introspection=yes
 
 make %{?_smp_mflags} V=1
@@ -67,9 +75,13 @@ find %{buildroot} -type f -name "*.la" -delete
 %{_datadir}/gir-1.0/RestExtras-0.7.gir
 
 %changelog
+* Tue Oct 17 2017 Debarshi Ray <rishi@fedoraproject.org> - 0.8.0-2
+- Fix the XML test
+Resolves: #1445700
+
 * Wed Sep 28 2016 Kalev Lember <klember@redhat.com> - 0.8.0-1
 - Update to 0.8.0
-- Resolves: #1387040
+Resolves: #1387040
 
 * Mon May 02 2016 Debarshi Ray <rishi@fedoraproject.org> - 0.7.92-5
 - Add rest_proxy_auth_cancel for cancelling authentication
