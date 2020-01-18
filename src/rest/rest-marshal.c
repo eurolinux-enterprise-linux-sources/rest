@@ -1,7 +1,5 @@
 #include "rest-marshal.h"
-
-#include	<glib-object.h>
-
+#include <glib-object.h>
 
 #ifdef G_ENABLE_DEBUG
 #define g_marshal_value_peek_boolean(v)  g_value_get_boolean (v)
@@ -49,23 +47,22 @@
 #define g_marshal_value_peek_variant(v)  (v)->data[0].v_pointer
 #endif /* !G_ENABLE_DEBUG */
 
-
 /* BOOLEAN:OBJECT,BOOLEAN (rest-marshal.txt:1) */
 void
 g_cclosure_user_marshal_BOOLEAN__OBJECT_BOOLEAN (GClosure     *closure,
-                                                 GValue       *return_value G_GNUC_UNUSED,
+                                                 GValue       *return_value,
                                                  guint         n_param_values,
                                                  const GValue *param_values,
                                                  gpointer      invocation_hint G_GNUC_UNUSED,
                                                  gpointer      marshal_data)
 {
-  typedef gboolean (*GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN) (gpointer     data1,
-                                                            gpointer     arg_1,
-                                                            gboolean     arg_2,
-                                                            gpointer     data2);
-  GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN callback;
-  GCClosure *cc = (GCClosure*) closure;
+  typedef gboolean (*GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN) (gpointer data1,
+                                                            gpointer arg1,
+                                                            gboolean arg2,
+                                                            gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
   gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__OBJECT_BOOLEAN callback;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);

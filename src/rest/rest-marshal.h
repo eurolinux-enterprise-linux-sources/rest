@@ -1,20 +1,21 @@
+/* This file is generated, all changes will be lost */
+#ifndef __G_CCLOSURE_USER_MARSHAL_MARSHAL_H__
+#define __G_CCLOSURE_USER_MARSHAL_MARSHAL_H__
 
-#ifndef __g_cclosure_user_marshal_MARSHAL_H__
-#define __g_cclosure_user_marshal_MARSHAL_H__
-
-#include	<glib-object.h>
+#include <glib-object.h>
 
 G_BEGIN_DECLS
 
 /* BOOLEAN:OBJECT,BOOLEAN (rest-marshal.txt:1) */
-extern void g_cclosure_user_marshal_BOOLEAN__OBJECT_BOOLEAN (GClosure     *closure,
-                                                             GValue       *return_value,
-                                                             guint         n_param_values,
-                                                             const GValue *param_values,
-                                                             gpointer      invocation_hint,
-                                                             gpointer      marshal_data);
+extern
+void g_cclosure_user_marshal_BOOLEAN__OBJECT_BOOLEAN (GClosure     *closure,
+                                                      GValue       *return_value,
+                                                      guint         n_param_values,
+                                                      const GValue *param_values,
+                                                      gpointer      invocation_hint,
+                                                      gpointer      marshal_data);
+
 
 G_END_DECLS
 
-#endif /* __g_cclosure_user_marshal_MARSHAL_H__ */
-
+#endif /* __G_CCLOSURE_USER_MARSHAL_MARSHAL_H__ */

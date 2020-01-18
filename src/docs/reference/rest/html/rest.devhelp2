@@ -93,9 +93,12 @@
     <keyword type="function" name="rest_proxy_call_get_params ()" link="RestProxyCall.html#rest-proxy-call-get-params"/>
     <keyword type="function" name="rest_proxy_call_run ()" link="RestProxyCall.html#rest-proxy-call-run"/>
     <keyword type="function" name="RestProxyCallAsyncCallback ()" link="RestProxyCall.html#RestProxyCallAsyncCallback"/>
+    <keyword type="function" name="RestProxyCallUploadCallback ()" link="RestProxyCall.html#RestProxyCallUploadCallback"/>
     <keyword type="function" name="rest_proxy_call_async ()" link="RestProxyCall.html#rest-proxy-call-async"/>
     <keyword type="function" name="rest_proxy_call_cancel ()" link="RestProxyCall.html#rest-proxy-call-cancel"/>
     <keyword type="function" name="rest_proxy_call_sync ()" link="RestProxyCall.html#rest-proxy-call-sync"/>
+    <keyword type="function" name="rest_proxy_call_upload ()" link="RestProxyCall.html#rest-proxy-call-upload"/>
+    <keyword type="function" name="rest_proxy_call_invoke_async ()" link="RestProxyCall.html#rest-proxy-call-invoke-async"/>
     <keyword type="function" name="rest_proxy_call_lookup_response_header ()" link="RestProxyCall.html#rest-proxy-call-lookup-response-header"/>
     <keyword type="function" name="rest_proxy_call_get_response_headers ()" link="RestProxyCall.html#rest-proxy-call-get-response-headers"/>
     <keyword type="function" name="rest_proxy_call_get_payload_length ()" link="RestProxyCall.html#rest-proxy-call-get-payload-length"/>
@@ -230,5 +233,14 @@
     <keyword type="constant" name="REST_PROXY_CALL_FAILED" link="RestProxyCall.html#REST-PROXY-CALL-FAILED:CAPS"/>
     <keyword type="constant" name="PLAINTEXT" link="OAuthProxy.html#PLAINTEXT:CAPS"/>
     <keyword type="constant" name="HMAC_SHA1" link="OAuthProxy.html#HMAC-SHA1:CAPS"/>
+    <keyword type="member" name="RestProxyClass.bind-valist" link="RestProxy.html#RestProxyClass.bind-valist"/>
+    <keyword type="member" name="RestProxyClass.new-call" link="RestProxy.html#RestProxyClass.new-call"/>
+    <keyword type="member" name="RestProxyClass.simple-run-valist" link="RestProxy.html#RestProxyClass.simple-run-valist"/>
+    <keyword type="member" name="RestProxyClass.authenticate" link="RestProxy.html#RestProxyClass.authenticate"/>
+    <keyword type="member" name="RestXmlNode-struct.name" link="RestXmlParser.html#RestXmlNode-struct.name"/>
+    <keyword type="member" name="RestXmlNode-struct.content" link="RestXmlParser.html#RestXmlNode-struct.content"/>
+    <keyword type="member" name="RestXmlNode-struct.children" link="RestXmlParser.html#RestXmlNode-struct.children"/>
+    <keyword type="member" name="RestXmlNode-struct.attrs" link="RestXmlParser.html#RestXmlNode-struct.attrs"/>
+    <keyword type="member" name="RestXmlNode-struct.next" link="RestXmlParser.html#RestXmlNode-struct.next"/>
   </functions>
 </book>

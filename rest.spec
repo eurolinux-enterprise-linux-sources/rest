@@ -1,5 +1,5 @@
 Name:          rest
-Version:       0.8.0
+Version:       0.8.1
 Release:       2%{?dist}
 Summary:       A library for access to RESTful web services
 
@@ -75,6 +75,14 @@ find %{buildroot} -type f -name "*.la" -delete
 %{_datadir}/gir-1.0/RestExtras-0.7.gir
 
 %changelog
+* Thu Jun 07 2018 Debarshi Ray <rishi@fedoraproject.org> - 0.8.1-2
+- Restore fix for the XML test
+Resolves: #1570023
+
+* Tue Oct 17 2017 Debarshi Ray <rishi@fedoraproject.org> - 0.8.1-1
+- Update to 0.8.1
+Resolves: #1570023
+
 * Tue Oct 17 2017 Debarshi Ray <rishi@fedoraproject.org> - 0.8.0-2
 - Fix the XML test
 Resolves: #1445700

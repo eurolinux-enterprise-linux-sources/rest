@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>RestParam: librest Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="librest Reference Manual">
 <link rel="up" href="ch01.html" title="Generic Proxies">
 <link rel="prev" href="ch01.html" title="Generic Proxies">
 <link rel="next" href="rest-RestParams.html" title="RestParams">
-<meta name="generator" content="GTK-Doc V1.24 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@ management</p>
 </tr></table></div>
 <div class="refsect1">
 <a name="rest-RestParam.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -66,7 +66,7 @@ management</p>
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="rest-RestParam.html#rest-param-is-string" title="rest_param_is_string ()">rest_param_is_string</a> <span class="c_punctuation">()</span>
@@ -95,7 +95,7 @@ management</p>
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="rest-RestParam.html#rest-param-get-content" title="rest_param_get_content ()">rest_param_get_content</a> <span class="c_punctuation">()</span>
@@ -103,7 +103,7 @@ management</p>
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="rest-RestParam.html#rest-param-get-content-length" title="rest_param_get_content_length ()">rest_param_get_content_length</a> <span class="c_punctuation">()</span>
@@ -130,7 +130,7 @@ management</p>
 </div>
 <div class="refsect1">
 <a name="rest-RestParam.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -161,8 +161,8 @@ rest_param_new_string (<em class="parameter"><code>const <span class="type">char
 <p>A convience constructor to create a <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> from a given UTF-8 string.
 The resulting <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> will have a content type of "text/plain".</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-new-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -188,7 +188,7 @@ The resulting <a class="link" href="rest-RestParam.html#RestParam" title="RestPa
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.2.6"></a><h4>Returns</h4>
+<a name="rest-param-new-string.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a>.</p>
 </div>
 </div>
@@ -198,8 +198,8 @@ The resulting <a class="link" href="rest-RestParam.html#RestParam" title="RestPa
 <pre class="programlisting"><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="returnvalue">RestParam</span></a> *
 rest_param_new_full (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                      <em class="parameter"><code><a class="link" href="rest-RestParam.html#RestMemoryUse" title="enum RestMemoryUse"><span class="type">RestMemoryUse</span></a> use</code></em>,
-                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> data</code></em>,
-                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> data</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>,
                      <em class="parameter"><code>const <span class="type">char</span> *content_type</code></em>,
                      <em class="parameter"><code>const <span class="type">char</span> *filename</code></em>);</pre>
 <p>Create a new <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> called <em class="parameter"><code>name</code></em>
@@ -212,8 +212,8 @@ value.  <em class="parameter"><code>content_type</code></em>
 <p>If the parameter is a file upload it can be passed as <em class="parameter"><code>filename</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-new-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -232,7 +232,7 @@ value.  <em class="parameter"><code>content_type</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p> a pointer to
+<td class="parameter_description"><p>a pointer to
 the start of the data. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=length][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> guint8]</span></td>
 </tr>
@@ -248,14 +248,14 @@ the start of the data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>filename</p></td>
-<td class="parameter_description"><p>the original filename, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_description"><p>the original filename, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.3.7"></a><h4>Returns</h4>
+<a name="rest-param-new-full.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a>.</p>
 </div>
 </div>
@@ -264,12 +264,12 @@ the start of the data. </p></td>
 <a name="rest-param-new-with-owner"></a><h3>rest_param_new_with_owner ()</h3>
 <pre class="programlisting"><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="returnvalue">RestParam</span></a> *
 rest_param_new_with_owner (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> data</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> data</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>,
                            <em class="parameter"><code>const <span class="type">char</span> *content_type</code></em>,
                            <em class="parameter"><code>const <span class="type">char</span> *filename</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> owner</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> owner_dnotify</code></em>);</pre>
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> owner</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> owner_dnotify</code></em>);</pre>
 <p>Create a new <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> called <em class="parameter"><code>name</code></em>
  with <em class="parameter"><code>length</code></em>
  bytes of <em class="parameter"><code>data</code></em>
@@ -295,14 +295,14 @@ it. This allows you to do something like this:</p>
 6
 7
 8</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GMappedFile</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">map </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-File-Utilities.html#g-mapped-file-new">g_mapped_file_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">filename</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span>
+        <td class="listing_code"><pre class="programlisting"><span class="usertype">GMappedFile</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">map </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-mapped-file-new">g_mapped_file_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">filename</span><span class="symbol">,</span><span class="normal"> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span>
 <span class="usertype">RestParam</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">param </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="rest-RestParam.html#rest-param-new-with-owner">rest_param_new_with_owner</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"media"</span><span class="symbol">,</span>
-<span class="normal">                                              </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-File-Utilities.html#g-mapped-file-get-contents">g_mapped_file_get_contents</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">map</span><span class="symbol">),</span>
-<span class="normal">                                              </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-File-Utilities.html#g-mapped-file-get-length">g_mapped_file_get_length</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">map</span><span class="symbol">),</span>
+<span class="normal">                                              </span><span class="function"><a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-mapped-file-get-contents">g_mapped_file_get_contents</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">map</span><span class="symbol">),</span>
+<span class="normal">                                              </span><span class="function"><a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-mapped-file-get-length">g_mapped_file_get_length</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">map</span><span class="symbol">),</span>
 <span class="normal">                                              </span><span class="string">"image/jpeg"</span><span class="symbol">,</span>
 <span class="normal">                                              filename</span><span class="symbol">,</span>
 <span class="normal">                                              map</span><span class="symbol">,</span>
-<span class="normal">                                              </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify">GDestroyNotify</a></span><span class="symbol">)</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-File-Utilities.html#g-mapped-file-unref">g_mapped_file_unref</a></span><span class="symbol">);</span></pre></td>
+<span class="normal">                                              </span><span class="symbol">(</span><span class="normal"><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify">GDestroyNotify</a></span><span class="symbol">)</span><span class="normal"><a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-mapped-file-unref">g_mapped_file_unref</a></span><span class="symbol">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -310,8 +310,8 @@ it. This allows you to do something like this:</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.2.2.6.4.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-new-with-owner.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -325,7 +325,7 @@ it. This allows you to do something like this:</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p> a pointer to
+<td class="parameter_description"><p>a pointer to
 the start of the data. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=length][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> guint8]</span></td>
 </tr>
@@ -341,18 +341,18 @@ the start of the data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>filename</p></td>
-<td class="parameter_description"><p> the original filename, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>the original filename, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>owner</p></td>
-<td class="parameter_description"><p> pointer to an object that owns <em class="parameter"><code>data</code></em>
+<td class="parameter_description"><p>pointer to an object that owns <em class="parameter"><code>data</code></em>
 . </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>owner_dnotify</p></td>
-<td class="parameter_description"><p> a function to free/unref <em class="parameter"><code>owner</code></em>
+<td class="parameter_description"><p>a function to free/unref <em class="parameter"><code>owner</code></em>
 when
 the buffer is freed. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
@@ -361,19 +361,19 @@ the buffer is freed. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.4.10"></a><h4>Returns</h4>
+<a name="rest-param-new-with-owner.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a>.</p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="rest-param-is-string"></a><h3>rest_param_is_string ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 rest_param_is_string (<em class="parameter"><code><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> *param</code></em>);</pre>
 <p>Determine if the parameter is a string value, i.e. the content type is "text/plain".</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-is-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -387,8 +387,8 @@ rest_param_is_string (<em class="parameter"><code><a class="link" href="rest-Res
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.5.6"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the parameter is a string, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<a name="rest-param-is-string.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the parameter is a string, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
 </div>
 </div>
 <hr>
@@ -398,8 +398,8 @@ rest_param_is_string (<em class="parameter"><code><a class="link" href="rest-Res
 rest_param_get_name (<em class="parameter"><code><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> *param</code></em>);</pre>
 <p>Get the name of the parameter.</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -413,7 +413,7 @@ rest_param_get_name (<em class="parameter"><code><a class="link" href="rest-Rest
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.6.6"></a><h4>Returns</h4>
+<a name="rest-param-get-name.returns"></a><h4>Returns</h4>
 <p> the parameter name.</p>
 </div>
 </div>
@@ -425,8 +425,8 @@ rest_param_get_content_type (<em class="parameter"><code><a class="link" href="r
 <p>Get the MIME type of the parameter.  For example, basic strings have the MIME
 type "text/plain".</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-get-content-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -440,7 +440,7 @@ type "text/plain".</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.7.6"></a><h4>Returns</h4>
+<a name="rest-param-get-content-type.returns"></a><h4>Returns</h4>
 <p> the MIME type</p>
 </div>
 </div>
@@ -451,8 +451,8 @@ type "text/plain".</p>
 rest_param_get_file_name (<em class="parameter"><code><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> *param</code></em>);</pre>
 <p>Get the original file name of the parameter, if one is available.</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-get-file-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -466,21 +466,21 @@ rest_param_get_file_name (<em class="parameter"><code><a class="link" href="rest
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.8.6"></a><h4>Returns</h4>
-<p> the filename if          set, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<a name="rest-param-get-file-name.returns"></a><h4>Returns</h4>
+<p> the filename if          set, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="rest-param-get-content"></a><h3>rest_param_get_content ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>
 rest_param_get_content (<em class="parameter"><code><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> *param</code></em>);</pre>
 <p>Get the content of <em class="parameter"><code>param</code></em>
 .  The content should be treated as read-only and
 not modified in any way.</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-get-content.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -494,21 +494,21 @@ not modified in any way.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.9.6"></a><h4>Returns</h4>
-<p> the content. </p>
+<a name="rest-param-get-content.returns"></a><h4>Returns</h4>
+<p>the content. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="rest-param-get-content-length"></a><h3>rest_param_get_content_length ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
 rest_param_get_content_length (<em class="parameter"><code><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> *param</code></em>);</pre>
 <p>Get the length of the content of <em class="parameter"><code>param</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-get-content-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -522,7 +522,7 @@ rest_param_get_content_length (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.10.6"></a><h4>Returns</h4>
+<a name="rest-param-get-content-length.returns"></a><h4>Returns</h4>
 <p> the length of the content</p>
 </div>
 </div>
@@ -534,8 +534,8 @@ rest_param_ref (<em class="parameter"><code><a class="link" href="rest-RestParam
 <p>Increase the reference count on <em class="parameter"><code>param</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -549,7 +549,7 @@ rest_param_ref (<em class="parameter"><code><a class="link" href="rest-RestParam
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.6.11.6"></a><h4>Returns</h4>
+<a name="rest-param-ref.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a></p>
 </div>
 </div>
@@ -562,8 +562,8 @@ rest_param_unref (<em class="parameter"><code><a class="link" href="rest-RestPar
 , destroying it if the reference count
 reaches 0.</p>
 <div class="refsect3">
-<a name="id-1.2.2.6.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="rest-param-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -583,8 +583,8 @@ reaches 0.</p>
 <div class="refsect2">
 <a name="RestMemoryUse"></a><h3>enum RestMemoryUse</h3>
 <div class="refsect3">
-<a name="id-1.2.2.7.2.3"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="RestMemoryUse.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -603,7 +603,7 @@ lifetime of the parameter, <a class="link" href="rest-RestParam.html#RestParam" 
 <td class="enum_member_name"><p><a name="REST-MEMORY-TAKE:CAPS"></a>REST_MEMORY_TAKE</p></td>
 <td class="enum_member_description">
 <p><a class="link" href="rest-RestParam.html#RestParam" title="RestParam"><span class="type">RestParam</span></a> will take ownership of the memory block, and
-<a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> it when it isn't used.</p>
+<a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> it when it isn't used.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -630,6 +630,6 @@ lifetime of the parameter, <a class="link" href="rest-RestParam.html#RestParam" 
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.24</div>
+<hr>Generated by GTK-Doc V1.26</div>
 </body>
 </html>
