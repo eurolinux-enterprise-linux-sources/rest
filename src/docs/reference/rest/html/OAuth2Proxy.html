@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>librest Reference Manual: OAuth2Proxy</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="librest Reference Manual">
+<link rel="up" href="ch02.html" title="OAuth Proxies">
+<link rel="prev" href="OAuthProxyCall.html" title="OAuthProxyCall">
+<link rel="next" href="OAuth2ProxyCall.html" title="OAuth2ProxyCall">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#OAuth2Proxy.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#OAuth2Proxy.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#OAuth2Proxy.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="OAuthProxyCall.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="OAuth2ProxyCall.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="OAuth2Proxy"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="OAuth2Proxy.top_of_page"></a>OAuth2Proxy</span></h2>
+<p>OAuth2Proxy</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="OAuth2Proxy.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-new" title="oauth2_proxy_new ()">oauth2_proxy_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-new-with-token" title="oauth2_proxy_new_with_token ()">oauth2_proxy_new_with_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-build-login-url-full" title="oauth2_proxy_build_login_url_full ()">oauth2_proxy_build_login_url_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-build-login-url" title="oauth2_proxy_build_login_url ()">oauth2_proxy_build_login_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-get-access-token" title="oauth2_proxy_get_access_token ()">oauth2_proxy_get_access_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-set-access-token" title="oauth2_proxy_set_access_token ()">oauth2_proxy_set_access_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="OAuth2Proxy.html#oauth2-proxy-extract-access-token" title="oauth2_proxy_extract_access_token ()">oauth2_proxy_extract_access_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="OAuth2Proxy.html#OAuth2Proxy--access-token" title="The “access-token” property">access-token</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="OAuth2Proxy.html#OAuth2Proxy--auth-endpoint" title="The “auth-endpoint” property">auth-endpoint</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="OAuth2Proxy.html#OAuth2Proxy--client-id" title="The “client-id” property">client-id</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="OAuth2Proxy.html#OAuth2Proxy-struct" title="OAuth2Proxy">OAuth2Proxy</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="RestProxy.html" title="RestProxy">RestProxy</a>
+        <span class="lineart">╰──</span> OAuth2Proxy
+</pre>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="oauth2-proxy-new"></a><h3>oauth2_proxy_new ()</h3>
+<pre class="programlisting"><a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+oauth2_proxy_new (<em class="parameter"><code>const <span class="type">char</span> *client_id</code></em>,
+                  <em class="parameter"><code>const <span class="type">char</span> *auth_endpoint</code></em>,
+                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *url_format</code></em>,
+                  <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> binding_required</code></em>);</pre>
+<p>Create a new <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> for the specified endpoint <em class="parameter"><code>url_format</code></em>
+, using the
+specified API key and secret.</p>
+<p>This proxy won't have the Token set so will be unauthorised.  If the token is
+unknown then the following steps should be taken to acquire an access token:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Get the authentication url with <a class="link" href="OAuth2Proxy.html#oauth2-proxy-build-login-url" title="oauth2_proxy_build_login_url ()"><code class="function">oauth2_proxy_build_login_url()</code></a></p></li>
+<li class="listitem"><p>Display this url in an embedded browser widget</p></li>
+<li class="listitem"><p>wait for the browser widget to be redirected to the specified redirect_uri</p></li>
+<li class="listitem"><p>extract the token from the fragment of the redirected uri (using
+convenience function <a class="link" href="OAuth2Proxy.html#oauth2-proxy-extract-access-token" title="oauth2_proxy_extract_access_token ()"><code class="function">oauth2_proxy_extract_access_token()</code></a>)</p></li>
+<li class="listitem"><p>set the token with <a class="link" href="OAuth2Proxy.html#oauth2-proxy-set-access-token" title="oauth2_proxy_set_access_token ()"><code class="function">oauth2_proxy_set_access_token()</code></a></p></li>
+</ul></div>
+<p>Set <em class="parameter"><code>binding_required</code></em>
+ to <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the URL contains string formatting
+operations (for example "http://foo.com/%s".  These must be expanded
+using <a class="link" href="RestProxy.html#rest-proxy-bind" title="rest_proxy_bind ()"><code class="function">rest_proxy_bind()</code></a> before invoking the proxy.</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.2.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_id</p></td>
+<td class="parameter_description"><p>the client (application) id</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auth_endpoint</p></td>
+<td class="parameter_description"><p>the authentication endpoint URL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>url_format</p></td>
+<td class="parameter_description"><p>the endpoint URL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>binding_required</p></td>
+<td class="parameter_description"><p>whether the URL needs to be bound before calling</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.8.2.9"></a><h4>Returns</h4>
+<p> A new <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-new-with-token"></a><h3>oauth2_proxy_new_with_token ()</h3>
+<pre class="programlisting"><a class="link" href="RestProxy.html" title="RestProxy"><span class="returnvalue">RestProxy</span></a> *
+oauth2_proxy_new_with_token (<em class="parameter"><code>const <span class="type">char</span> *client_id</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *access_token</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *auth_endpoint</code></em>,
+                             <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *url_format</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> binding_required</code></em>);</pre>
+<p>Create a new <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> for the specified endpoint <em class="parameter"><code>url_format</code></em>
+, using the
+specified client id</p>
+<p><em class="parameter"><code>access_token</code></em>
+ is used for the Access Token, so if they are still valid then
+this proxy is authorised.</p>
+<p>Set <em class="parameter"><code>binding_required</code></em>
+ to <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the URL contains string formatting
+operations (for example "http://foo.com/%s".  These must be expanded
+using <a class="link" href="RestProxy.html#rest-proxy-bind" title="rest_proxy_bind ()"><code class="function">rest_proxy_bind()</code></a> before invoking the proxy.</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.3.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_id</p></td>
+<td class="parameter_description"><p>the client (application) id</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>access_token</p></td>
+<td class="parameter_description"><p>the Access Token</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auth_endpoint</p></td>
+<td class="parameter_description"><p>the authentication endpoint URL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>url_format</p></td>
+<td class="parameter_description"><p>the endpoint URL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>binding_required</p></td>
+<td class="parameter_description"><p>whether the URL needs to be bound before calling</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.8.3.8"></a><h4>Returns</h4>
+<p> A new <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-build-login-url-full"></a><h3>oauth2_proxy_build_login_url_full ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+oauth2_proxy_build_login_url_full (<em class="parameter"><code><a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> *proxy</code></em>,
+                                   <em class="parameter"><code>const <span class="type">char</span> *redirect_uri</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *extra_params</code></em>);</pre>
+<p>Builds a url at which the user can log in to the specified OAuth2-based web
+service.  In general, this url should be displayed in an embedded browser
+widget, and you should then intercept the browser's redirect to <em class="parameter"><code>redirect_uri</code></em>
+
+and extract the access token from the url fragment. After the access token
+has been retrieved, call <a class="link" href="OAuth2Proxy.html#oauth2-proxy-set-access-token" title="oauth2_proxy_set_access_token ()"><code class="function">oauth2_proxy_set_access_token()</code></a>.  This must be done
+before making any API calls to the service.</p>
+<p>See the oauth2 spec for more details about the "user-agent" authentication
+flow.</p>
+<p>The <em class="parameter"><code>extra_params</code></em>
+ and <em class="parameter"><code>redirect_uri</code></em>
+ should not be uri-encoded, that will be
+done automatically</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.4.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>a OAuth2Proxy object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>redirect_uri</p></td>
+<td class="parameter_description"><p>the uri to redirect to after the user authenticates</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extra_params</p></td>
+<td class="parameter_description"><p>any extra parameters to add to the login url (e.g. facebook
+uses 'scope=foo,bar' to request extended permissions).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.8.4.8"></a><h4>Returns</h4>
+<p> a newly allocated uri string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-build-login-url"></a><h3>oauth2_proxy_build_login_url ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+oauth2_proxy_build_login_url (<em class="parameter"><code><a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> *proxy</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *redirect_uri</code></em>);</pre>
+<p>Builds a url at which the user can log in to the specified OAuth2-based web
+service.  See the documentation for <a class="link" href="OAuth2Proxy.html#oauth2-proxy-build-login-url-full" title="oauth2_proxy_build_login_url_full ()"><code class="function">oauth2_proxy_build_login_url_full()</code></a> for
+detailed information.</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an OAuth2Proxy object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>redirect_uri</p></td>
+<td class="parameter_description"><p>the uri to redirect to after the user authenticates</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.8.5.6"></a><h4>Returns</h4>
+<p> a newly allocated uri string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-get-access-token"></a><h3>oauth2_proxy_get_access_token ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+oauth2_proxy_get_access_token (<em class="parameter"><code><a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> *proxy</code></em>);</pre>
+<p>Get the current request or access token.</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.8.6.6"></a><h4>Returns</h4>
+<p> the token, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no token yet.  This string is owned
+by <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> and should not be freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-set-access-token"></a><h3>oauth2_proxy_set_access_token ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+oauth2_proxy_set_access_token (<em class="parameter"><code><a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> *proxy</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *access_token</code></em>);</pre>
+<p>Set the access token.</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>proxy</p></td>
+<td class="parameter_description"><p>an <a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>access_token</p></td>
+<td class="parameter_description"><p>the access token</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="oauth2-proxy-extract-access-token"></a><h3>oauth2_proxy_extract_access_token ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+oauth2_proxy_extract_access_token (<em class="parameter"><code>const <span class="type">char</span> *url</code></em>);</pre>
+<p>A utility function to extract the access token from the url that results from
+the redirection after the user authenticates</p>
+<div class="refsect3">
+<a name="id-1.3.4.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>the url which contains an access token in its fragment</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="OAuth2Proxy-struct"></a><h3>OAuth2Proxy</h3>
+<pre class="programlisting">typedef struct _OAuth2Proxy OAuth2Proxy;</pre>
+<p><a class="link" href="OAuth2Proxy.html" title="OAuth2Proxy"><span class="type">OAuth2Proxy</span></a> has no publicly available members.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="OAuth2Proxy.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="OAuth2Proxy--access-token"></a><h3>The <code class="literal">“access-token”</code> property</h3>
+<pre class="programlisting">  “access-token”             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The request or access token.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OAuth2Proxy--auth-endpoint"></a><h3>The <code class="literal">“auth-endpoint”</code> property</h3>
+<pre class="programlisting">  “auth-endpoint”            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The authentication endpoint url.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OAuth2Proxy--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
+<pre class="programlisting">  “client-id”                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The client (application) id.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>
